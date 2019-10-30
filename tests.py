@@ -3,7 +3,7 @@ import unittest
 from app import app, db
 from app.models import User, Post
 
-class UserModelCase(unittest.testCase):
+class UserModelCase(unittest.TestCase):
 	def setUp(self):
 		app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://'
 		db.create_all()
@@ -37,7 +37,7 @@ class UserModelCase(unittest.testCase):
 		self.assertEqual(u1.followed.count(), 1)
 		self.assertEqual(u1.followed.first().username, 'susan')
 		self.assertEqual(u2.followers.count(), 1)
-		self.assertEqual(u2.folowers.first().username, 'john')
+		self.assertEqual(u2.followers.first().username, 'john')
 
 		u1.unfollow(u2)
 		db.session.commit()
@@ -48,7 +48,7 @@ class UserModelCase(unittest.testCase):
 	def test_follow_posts(self):
 		# Create four users
 		u1 = User(username='john', email='john@example.com')
-		u2 = User(userename='susan', email='susan@example.com')
+		u2 = User(username='susan', email='susan@example.com')
 		u3 = User(username='chris', email='chris@example.com')
 		u4 = User(username='luna', email='luna@example.com')
 

@@ -1,6 +1,6 @@
 import unittest
 
-class Test(unittest.testCase):
+class Test(unittest.TestCase):
 	def myTest(self):
 		a = 1
 		self.assertEqual(a, 1)
