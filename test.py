@@ -1,0 +1,9 @@
+import unittest
+
+class Test(unittest.testCase):
+	def myTest(self):
+		a = 1
+		self.assertEqual(a, 1)
+
+if __name__ == '__main__':
+	unittest.main()
