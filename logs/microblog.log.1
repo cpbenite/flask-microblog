@@ -1,4 +1,4 @@
-2019-10-31 11:26:21,594 ERROR: Exception on /index [GET] [in c:\users\cbeni\appdata\roaming\spb_data\example\flask-microblog\env\lib\site-packages\flask\app.py:1891]
+2019-10-31 12:38:00,360 ERROR: Exception on / [GET] [in c:\users\cbeni\appdata\roaming\spb_data\example\flask-microblog\env\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "c:\users\cbeni\appdata\roaming\spb_data\example\flask-microblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
     cursor, statement, parameters, context
@@ -76,3 +76,24 @@ FROM post
 WHERE post.user_id = ?) AS anon_1 ORDER BY anon_1.post_timestamp DESC]
 [parameters: (3, 3)]
 (Background on this error at: http://sqlalche.me/e/e3q8)
+2019-10-31 12:39:20,104 INFO: Microblog startup [in C:\Users\cbeni\AppData\Roaming\SPB_Data\example\flask-microblog\app\__init__.py:42]
+2019-10-31 12:39:24,140 ERROR: Exception on / [GET] [in c:\users\cbeni\appdata\roaming\spb_data\example\flask-microblog\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\cbeni\appdata\roaming\spb_data\example\flask-microblog\env\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\cbeni\appdata\roaming\spb_data\example\flask-microblog\env\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\cbeni\appdata\roaming\spb_data\example\flask-microblog\env\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\cbeni\appdata\roaming\spb_data\example\flask-microblog\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\cbeni\appdata\roaming\spb_data\example\flask-microblog\env\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\cbeni\appdata\roaming\spb_data\example\flask-microblog\env\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\cbeni\appdata\roaming\spb_data\example\flask-microblog\env\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\cbeni\AppData\Roaming\SPB_Data\example\flask-microblog\app\routes.py", line 20, in index
+    posts = current_user.followed_posts().query.all()
+AttributeError: 'BaseQuery' object has no attribute 'query'
+2019-10-31 12:39:46,220 INFO: Microblog startup [in C:\Users\cbeni\AppData\Roaming\SPB_Data\example\flask-microblog\app\__init__.py:42]
