@@ -60,3 +60,6 @@ AttributeError: 'function' object has no attribute 'all'
 2019-10-31 12:43:59,092 INFO: Microblog startup [in C:\Users\cbeni\AppData\Roaming\SPB_Data\example\flask-microblog\app\__init__.py:42]
 2019-10-31 12:52:36,168 INFO: Microblog startup [in C:\Users\cbeni\AppData\Roaming\SPB_Data\example\flask-microblog\app\__init__.py:42]
 2019-10-31 12:52:59,308 INFO: Microblog startup [in C:\Users\cbeni\AppData\Roaming\SPB_Data\example\flask-microblog\app\__init__.py:42]
+2019-11-04 10:51:27,808 INFO: Microblog startup [in C:\Users\cbeni\AppData\Roaming\SPB_Data\example\flask-microblog\app\__init__.py:42]
+2019-11-04 10:56:58,219 INFO: Microblog startup [in C:\Users\cbeni\AppData\Roaming\SPB_Data\example\flask-microblog\app\__init__.py:42]
+2019-11-04 10:58:01,529 INFO: Microblog startup [in C:\Users\cbeni\AppData\Roaming\SPB_Data\example\flask-microblog\app\__init__.py:42]
